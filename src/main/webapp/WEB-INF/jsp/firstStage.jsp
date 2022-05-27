@@ -6,7 +6,7 @@
 
 <%
 	Hantei hantei = (Hantei)session.getAttribute("hantei");
-	String name = (String)session.getAttribute("name");
+	String name = (String)request.getAttribute("name");
 %>
 
 <!DOCTYPE html>
