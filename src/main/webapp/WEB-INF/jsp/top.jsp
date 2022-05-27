@@ -25,7 +25,7 @@
 	}
 	%>
 
-	<form method="post" action="${pageContext.request.contextPath}/area1">
+	<form method="post" action="${pageContext.request.contextPath}/stage">
 		<h3>あなたのお名前は?</h3>
 		<input id="buttons" type="text" name="name">
 		<div id="faa">

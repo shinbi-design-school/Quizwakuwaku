@@ -15,7 +15,8 @@
 <meta charset="UTF-8">
 <title>わくわくクイズ～難問編～</title>
 <link rel="stylesheet" type="text/css"
-href="${pageContext.request.contextPath}/css/Style.css">
+
+	href="${pageContext.request.contextPath}/css/style2.css">
 </head>
 <body>
 <header>
