@@ -2,45 +2,38 @@ SET SESSION FOREIGN_KEY_CHECKS=0;
 
 /* Drop Tables */
 
-DROP TABLE IF EXISTS quiz;
-DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS messages;
+DROP TABLE IF EXISTS users;
 
 
 
 
 /* Create Tables */
 
-CREATE TABLE quiz
+CREATE TABLE messages
 (
-	-- クイズID
-	-- 主キー
-	id int NOT NULL AUTO_INCREMENT COMMENT 'クイズID
-主キー',
-	-- クイズID
-	-- 主キー
-	user_id int NOT NULL COMMENT 'クイズID
-主キー',
+	id int NOT NULL AUTO_INCREMENT,
+	user_id int NOT NULL,
+	text text NOT NULL,
+	image mediumblob,
+	image_file_name varchar(64),
+	is_public boolean NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NOT NULL,
 	PRIMARY KEY (id)
 );
 
 
-CREATE TABLE user
+CREATE TABLE users
 (
-	-- クイズID
-	-- 主キー
-	id int NOT NULL AUTO_INCREMENT COMMENT 'クイズID
-主キー',
-	-- アカウント名
-	account varchar(32) NOT NULL COMMENT 'アカウント名',
+	id int NOT NULL AUTO_INCREMENT,
+	account varchar(32) NOT NULL,
 	name varchar(64) NOT NULL,
-	-- パスワード
-	password varchar(256) NOT NULL COMMENT 'パスワード',
-	-- パスワードのハッシュ化
-	salt varchar(64) NOT NULL COMMENT 'パスワードのハッシュ化',
-	-- 管理者 true
-	-- 一般ユーザーfalse
-	is_admin boolean NOT NULL COMMENT '管理者 true
-一般ユーザーfalse',
+	password varchar(256) NOT NULL,
+	salt varchar(64) NOT NULL,
+	is_admin boolean NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NOT NULL,
 	PRIMARY KEY (id),
 	UNIQUE (account)
 );
@@ -49,9 +42,9 @@ CREATE TABLE user
 
 /* Create Foreign Keys */
 
-ALTER TABLE quiz
+ALTER TABLE messages
 	ADD FOREIGN KEY (user_id)
-	REFERENCES user (id)
+	REFERENCES users (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
