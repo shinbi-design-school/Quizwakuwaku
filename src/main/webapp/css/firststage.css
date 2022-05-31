@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body {
+	background-image:url("../backgame.jpg");
+	 background-size:  160%; 
+	 text-align: center;
+}
