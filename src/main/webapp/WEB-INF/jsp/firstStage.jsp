@@ -32,7 +32,12 @@ String name = (String) request.getAttribute("name");
 		<div class=explanatory>
 			<p>ファーストステージへようこそ！このステージでは読み方に関するクイズが出題されます。</p>
 			<p>５問中３問間違えたらゲームオーバー！次のステージに進めません。</p>
+
 		</div>
+
+		<img class="neko" src="cat_nekoko.png" alt="neko" title="neko1">
+		<img class="neko1" src="cat_tomomo.png" alt="neko2" title="neko2">
+
 
 		<form method="post" action="${pageContext.request.contextPath}/result">
 			<%
@@ -62,6 +67,11 @@ String name = (String) request.getAttribute("name");
 			<div id="buttons">
 				<input class=back type="submit" value="結果を見る">
 			</div>
+
+			<div id="faa">
+				<input id="botan" type="submit" value="回答を確認する">
+			</div>
+
 		</form>
 	</main>
 </body>
