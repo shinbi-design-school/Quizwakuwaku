@@ -26,9 +26,9 @@
 		またの挑戦をお待ちしております。</p>
 		<h4><%= result.getDescription() %></h4>
 		<form method="get" action="${pageContext.request.contextPath}/top">
-		<div id="buttons">
-			<input type="submit" value="トップ画面に戻る">
-		</div>
+		<div id="faa">
+				<input id="botan" type="submit" value="トップ画面に戻る">
+			</div>
 		</form>
 	</body>
 </html>
