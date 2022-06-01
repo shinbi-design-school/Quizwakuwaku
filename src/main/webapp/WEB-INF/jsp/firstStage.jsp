@@ -31,7 +31,7 @@ String name = (String) request.getAttribute("name");
 		</div>
 		<div class=explanatory>
 			<p>ファーストステージへようこそ！このステージでは読み方に関するクイズが出題されます。</p>
-			<p>５問中３問間違えたらゲームオーバー！次のステージに進めません。</p>
+			<p>５問中３問以上正解ならファーストステージクリア！！次のステージに進めます。</p>
 
 		</div>
 
