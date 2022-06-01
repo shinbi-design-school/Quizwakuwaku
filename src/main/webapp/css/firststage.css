@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 body {
-	background-image:url("../magari_michi .png");
-	background-size: 160%;
+	background-image:url("../ocean.jpg");
+	background-size: 100%;
 	text-align: center;
 }
 
@@ -75,15 +75,6 @@ h3{
   /*押したとき*/
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -172,3 +163,107 @@ p{
 }
 
 
+#result {
+	font-size: 40px;
+	font-weight: bold;
+	color: red;
+}
+
+
+
+.iruka{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 1300px;
+	top: 750px;
+	margin-right:100px;
+  	
+}
+
+
+.iruka1{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: 1300px;
+	top: 750px;
+	transform: scale(-1, 1);
+	
+}
+
+.kurage{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 1300px;
+	top: 1000px;
+	
+}
+
+.kurage1{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: 1300px;
+	top: 1000px;
+	transform: scale(-1, 1);
+	
+}
+
+.maguro{
+	width: 190px;
+	height: 190px;
+	position: absolute;
+	left: 1300px;
+	top: 1250px;
+	
+}
+
+.maguro1{
+	width: 190px;
+	height: 190px;
+	position: absolute;
+	right: 1300px;
+	top: 1250px;
+	transform: scale(-1, 1);
+	
+}
+
+.hitode{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 1300px;
+	top: 1530px;
+	
+}
+
+.hitode1{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: 1300px;
+	top: 1530px;
+	transform: scale(-1, 1);
+	
+}
+
+.tatsunootoshigo{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 1300px;
+	top: 1800px;
+	
+}
+
+.tatsunootoshigo1{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: 1300px;
+	top: 1800px;
+	transform: scale(-1, 1);
+	
+}

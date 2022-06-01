@@ -1,6 +1,5 @@
 package cc.shinbi.quizwakuwaku.servlet;
 
-//小林さん
 
 import java.io.IOException;
 
