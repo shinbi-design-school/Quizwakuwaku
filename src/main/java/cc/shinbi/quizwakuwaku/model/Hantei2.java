@@ -27,7 +27,7 @@ public class Hantei2 {
 		for(Question question : this.questions) {
 			question.shuffle();
 		}
-		Collections.shuffle(this.questions);;
+		Collections.shuffle(this.questions);
 	}
 	
 	private static List<Result> getResultList() {

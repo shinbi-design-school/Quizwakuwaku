@@ -28,7 +28,6 @@ public class Hantei {
 			question.shuffle();
 		}
 		Collections.shuffle(this.questions);
-		;
 	}
 
 	private static List<Result> getResultList() {

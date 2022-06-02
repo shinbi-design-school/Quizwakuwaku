@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<%@ page import="cc.shinbi.quizwakuwaku.model.Hantei" %>
+<%@ page import="cc.shinbi.quizwakuwaku.model.Hantei3" %>
 <%@ page import="cc.shinbi.quizwakuwaku.model.Question" %>
 <%@ page import="cc.shinbi.quizwakuwaku.model.Item" %>
 
 <%
-	Hantei hantei = (Hantei)session.getAttribute("hantei");
+	Hantei3 hantei = (Hantei3)session.getAttribute("hantei");
 	String name = (String)request.getAttribute("name");
 %>
 
@@ -64,6 +64,7 @@ href="${pageContext.request.contextPath}/css/Style.css">
  <div id="buttons">
  <input class=back type="submit" value="結果を見る">
  </div>
+ <input type="hidden" name="name" value="<%= name %>">
  </form>
  </main>
  </body>

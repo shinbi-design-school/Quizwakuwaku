@@ -30,6 +30,7 @@
 		<div id="buttons">
 			<input type="submit" value="次のステージへ">
 		</div>
+		<input type="hidden" name="name" value="<%= name %>">
 		</form>
 	</body>
 </html>

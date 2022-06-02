@@ -95,7 +95,7 @@ String name = (String) request.getAttribute("name");
 			<div id="faa">
 				<input id="botan" type="submit" value="回答を確認する">
 			</div>
-
+			<input type="hidden" name="name" value="<%= name %>">
 		</form>
 	</main>
 </body>

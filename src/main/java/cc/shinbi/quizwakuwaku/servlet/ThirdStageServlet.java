@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import cc.shinbi.quizwakuwaku.model.Hantei;
+import cc.shinbi.quizwakuwaku.model.Hantei3;
 
 @WebServlet("/thirdStage")
 public class ThirdStageServlet extends HttpServlet {
@@ -27,7 +27,7 @@ public class ThirdStageServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		String name = request.getParameter("name");
-		Hantei hantei = Hantei.createHantei();
+		Hantei3 hantei = Hantei3.createHantei();
 		
 		String jsp = null;
 		request.setAttribute("hantei",  hantei);

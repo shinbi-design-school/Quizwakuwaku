@@ -31,7 +31,7 @@
 		<div id="faa">
 				<input id="botan" type="submit" value="セカンドステージへ">
 			</div>
-		
+		<input type="hidden" name="name" value="<%= name %>">
 		</form>
 	</body>
 </html>

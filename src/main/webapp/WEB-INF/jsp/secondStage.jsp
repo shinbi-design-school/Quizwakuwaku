@@ -63,6 +63,7 @@ href="${pageContext.request.contextPath}/css/Style.css">
  <div id="buttons">
  <input class=back type="submit" value="結果を見る">
  </div>
+ <input type="hidden" name="name" value="<%= name %>">
  </form>
  </main>
  </body>

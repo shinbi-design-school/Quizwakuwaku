@@ -17,10 +17,10 @@ import javax.servlet.http.HttpSession;
 import cc.shinbi.quizwakuwaku.model.Hantei;
 
 @WebServlet("/stage")
-public class StageServlet1 extends HttpServlet {
+public class StageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public StageServlet1() {
+    public StageServlet() {
         super();
     }
 

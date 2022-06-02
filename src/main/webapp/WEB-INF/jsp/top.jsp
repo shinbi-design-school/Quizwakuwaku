@@ -14,7 +14,7 @@
 	href="${pageContext.request.contextPath}/css/style2.css">
 </head>
 <body>
-<div class=wakuwaku>
+	<div class=wakuwaku>
 	<h1>~ クイズわくわく ~</h1>
 
 	<%
