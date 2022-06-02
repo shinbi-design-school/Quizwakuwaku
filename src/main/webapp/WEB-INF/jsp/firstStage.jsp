@@ -36,54 +36,57 @@ String name = (String) request.getAttribute("name");
 		</div>
 
 		<div>
-			<img class="neko" src="cat_nekoko.png">
-			<img class="neko1" src="cat_tomomo.png">
+			<img class="neko" src="cat_nekoko.png"> <img class="neko1"
+				src="cat_tomomo.png">
 		</div>
 
 		<form method="post" action="${pageContext.request.contextPath}/result">
-		
+
 			<div>
-				<img class="iruka" src="iruka.png">
-				<img class="iruka1" src="iruka.png">
+				<img class="iruka" src="iruka.png"> <img class="iruka1"
+					src="iruka.png">
 			</div>
-			
+
 			<div>
-				<img class="kurage" src="kurage.png">
-				<img class="kurage1" src="kurage.png">
+				<img class="kurage" src="kurage.png"> <img class="kurage1"
+					src="kurage.png">
 			</div>
-				
+
 			<div>
-				<img class="maguro" src="maguro.png">
-				<img class="maguro1" src="maguro.png">
+				<img class="maguro" src="maguro.png"> <img class="maguro1"
+					src="maguro.png">
 			</div>
-			
+
 			<div>
-				<img class="hitode" src="hitode.png">
-				<img class="hitode1" src="hitode.png">
+				<img class="hitode" src="hitode.png"> <img class="hitode1"
+					src="hitode.png">
 			</div>
-				
+
 			<div>
-				<img class="tatsunootoshigo" src="tatsunootoshigo.png">
-				<img class="tatsunootoshigo1" src="tatsunootoshigo.png">
+				<img class="tatsunootoshigo" src="tatsunootoshigo.png"> <img
+					class="tatsunootoshigo1" src="tatsunootoshigo.png">
 			</div>
-			
+
+
+
 			<%
+			int times = 0;
 			for (Question question : hantei.getQuestions()) {
 			%>
-			<div class=questionbox>
+			<div>
 				<h3><%=question.getQuestion()%></h3>
 			</div>
-			<div class=answerbox>
-			
+			<div class="answerbox">
 				<%
 				for (Item item : question.getItems()) {
 				%>
 				<div>
-					<input type="radio" name="<%=question.getKey()%>"
-						value="<%=item.getId()%>">
-					<%=item.getText()%>
+					<input class="point" id="select<%=times%>" type="radio"
+						name="<%=question.getKey()%>" value="<%=item.getId()%>" required>
+					<label for="select<%=times%>" class="point"><%=item.getText()%></label>
 				</div>
 				<%
+				times++;
 				}
 				%>
 			</div>
@@ -95,7 +98,7 @@ String name = (String) request.getAttribute("name");
 			<div id="faa">
 				<input id="botan" type="submit" value="回答を確認する">
 			</div>
-			<input type="hidden" name="name" value="<%= name %>">
+			<input type="hidden" name="name" value="<%=name%>">
 		</form>
 	</main>
 </body>
