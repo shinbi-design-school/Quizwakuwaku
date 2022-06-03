@@ -15,57 +15,84 @@
 <meta charset="UTF-8">
 <title>わくわくクイズ～スウィーツ編～</title>
 <link rel="stylesheet" type="text/css"
-href="${pageContext.request.contextPath}/css/Style.css">
+	href="${pageContext.request.contextPath}/css/thirdStage.css">
 </head>
 <body>
-<header>
-<h1>わくわくクイズ</h1>
-<h2>～スウィーツ～</h2>
+	<header>
+		<h1>わくわくクイズ</h1>
+		<h2>サードステージ～スウィーツ編～</h2>
 
-</header>
-<main>
+	</header>
+	<main>
+		<div>
+			<h3><%=name%>さん
+			</h3>
+		</div>
+		<div class=sumi>
+			<p>サードステージへようこそ！このステージでは読み方に関するクイズが出題されます。</p>
+			<p>５問中３問以上正解ならファーストステージクリア！！次のステージに進めます。</p>
 
-<div>
-	<h3><%= name %>さん</h3>
-</div>
-<div class=sumi>
-<p>わくわくクイズへようこそ！このステージではスウィーツに関するクイズが出題されます。</p>
-<p>５問中３問間違えたらゲームオーバー！次のステージに進めません。</p>
-</div>
+		</div>
 
-<form method="post" action="${pageContext.request.contextPath}/result3">
-<%
- for(Question question : hantei.getQuestions()){
-%>
- <div class=box>
- <h3><%= question.getQuestion() %></h3>
- </div>
- <div>
-<%
- for(Item item : question.getItems()){
-%>
-<div>
-<input type="radio"
- name="<%= question.getKey() %>"
- value="<%= item.getId() %>"
+		<div>
+			<img class="neko" src="cat_nekoko.png"> <img class="neko1"
+				src="cat_tomomo.png">
+		</div>
+		
+		<div>
+				<img class="green" src="green.png"> 
+			</div>
+			
+			<div>
+				 <img class="maguro1" src="orange.png"> 
+			</div>
+			
+			<div>
+				<img class="red" src="red.png"> 
+			</div>
+			
+			<div>
+				<img class="brown1" src="brown.png"> 
+			</div>
+			
+			<div>
+				<img class="white" src="white.png"> 
+			</div>
 
- >
- <%= item.getText() %>
- </div>
- <%
- }
- %>
- </div>
- 
- <%
- }
- %>
- 
- <div id="buttons">
- <input class=back type="submit" value="結果を見る">
- </div>
- <input type="hidden" name="name" value="<%= name %>">
- </form>
- </main>
- </body>
- </html>
+		<form method="post" action="${pageContext.request.contextPath}/result3">
+			<%
+			int times = 0;
+			for (Question question : hantei.getQuestions()) {
+			%>
+			<div class="box">
+				<h3><%=question.getQuestion()%></h3>
+			
+				<%
+				for (Item item : question.getItems()) {
+				%>
+				
+				
+					<input class="point" id="select<%=times%>" type="radio"
+						name="<%=question.getKey()%>" value="<%=item.getId()%>" required>
+					<label for="select<%=times%>" class="point"><%=item.getText()%></label>
+				
+				<%
+				times++;
+				}
+				%>
+			</div>
+
+			<%
+			}
+			%>
+           <div>
+				<img class="sweets" src="sweets.png"> 
+			</div>
+			<div id="buttons">
+				<input class="back" type="submit" value="回答を確認する">
+			</div>
+			<input type="hidden" name="name" value="<%=name%>">
+		</form>
+	</main>
+</body>
+</html>
