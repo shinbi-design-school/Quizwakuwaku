@@ -21,7 +21,6 @@ String name = (String) request.getAttribute("name");
 <body>
 	<header>
 		<h1>わくわくクイズ</h1>
-		<h2>ファーストステージ</h2>
 
 	</header>
 	<main>
@@ -41,34 +40,24 @@ String name = (String) request.getAttribute("name");
 		</div>
 
 		<form method="post" action="${pageContext.request.contextPath}/result">
-
 			<div>
-				<img class="iruka" src="iruka.png"> <img class="iruka1"
-					src="iruka.png">
+				<img class="iruka1" src="iruka.png">
+				<img class="iruka"src="iruka.png">
+			
+				<img class="kurage" src="kurage.png"> 
+				<img class="kurage1" src="kurage.png">
+
+				<img class="maguro" src="maguro.png">
+				<img class="maguro1"src="maguro.png">
+				
+				<img class="hitode" src="hitode.png">
+				<img class="hitode1" src="hitode.png">
+		
+				<img class="tatsunootoshigo" src="tatsunootoshigo.png">
+				<img class="tatsunootoshigo1" src="tatsunootoshigo.png">
+				
 			</div>
-
-			<div>
-				<img class="kurage" src="kurage.png"> <img class="kurage1"
-					src="kurage.png">
-			</div>
-
-			<div>
-				<img class="maguro" src="maguro.png"> <img class="maguro1"
-					src="maguro.png">
-			</div>
-
-			<div>
-				<img class="hitode" src="hitode.png"> <img class="hitode1"
-					src="hitode.png">
-			</div>
-
-			<div>
-				<img class="tatsunootoshigo" src="tatsunootoshigo.png"> <img
-					class="tatsunootoshigo1" src="tatsunootoshigo.png">
-			</div>
-
-
-
+				
 			<%
 			int times = 0;
 			for (Question question : hantei.getQuestions()) {

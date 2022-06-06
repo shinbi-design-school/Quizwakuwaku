@@ -2,7 +2,8 @@
 
 body {
 	background-image:url("../ocean.jpg");
-	background-size: 100%;
+	background-attachment: fixed;
+	background-size:  100%; 
 	text-align: center;
 }
 
@@ -178,7 +179,7 @@ p{
 	height: 150px;
 	position: absolute;
 	left: 900px;
-	top: 750px;
+	top: 700px;
 	margin-right:100px;
   	
 }
@@ -189,7 +190,7 @@ p{
 	height: 150px;
 	position: absolute;
 	right: 900px;
-	top: 750px;
+	top: 700px;
 	transform: scale(-1, 1);
 	
 }
@@ -199,7 +200,7 @@ p{
 	height: 150px;
 	position: absolute;
 	left: 900px;
-	top: 1000px;
+	top: 950px;
 	
 }
 
@@ -208,7 +209,7 @@ p{
 	height: 150px;
 	position: absolute;
 	right: 900px;
-	top: 1000px;
+	top: 950px;
 	transform: scale(-1, 1);
 	
 }
@@ -218,7 +219,7 @@ p{
 	height: 190px;
 	position: absolute;
 	left: 900px;
-	top: 1250px;
+	top: 1200px;
 	
 }
 
@@ -227,7 +228,7 @@ p{
 	height: 190px;
 	position: absolute;
 	right: 900px;
-	top: 1250px;
+	top: 1200px;
 	transform: scale(-1, 1);
 	
 }
@@ -237,7 +238,7 @@ p{
 	height: 150px;
 	position: absolute;
 	left: 900px;
-	top: 1530px;
+	top: 1480px;
 	
 }
 
@@ -246,7 +247,7 @@ p{
 	height: 150px;
 	position: absolute;
 	right: 900px;
-	top: 1530px;
+	top: 1480px;
 	transform: scale(-1, 1);
 	
 }
@@ -256,7 +257,7 @@ p{
 	height: 150px;
 	position: absolute;
 	left: 900px;
-	top: 1800px;
+	top: 1750px;
 	
 }
 
@@ -265,7 +266,7 @@ p{
 	height: 150px;
 	position: absolute;
 	right: 900px;
-	top: 1800px;
+	top: 1750px;
 	transform: scale(-1, 1);
 	
 }
