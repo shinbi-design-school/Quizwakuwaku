@@ -169,7 +169,7 @@ public class Hantei {
 		question3.addItem(3, "鰮");
 		list.add(question3);
 
-		Question question4 = new Question("q4", "ヒトデを英訳はどれ？");
+		Question question4 = new Question("q4", "ヒトデの英訳はどれ？");
 		question4.addItem(0, "starfish");
 		question4.addItem(1, "starshell");
 		question4.addItem(2, "starmine");
