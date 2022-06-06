@@ -2,7 +2,6 @@ package cc.shinbi.quizwakuwaku.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Hantei3 {
@@ -27,7 +26,7 @@ public class Hantei3 {
 		for(Question question : this.questions) {
 			question.shuffle();
 		}
-		Collections.shuffle(this.questions);
+		//Collections.shuffle(this.questions);
 	}
 	
 	private static List<Result> getResultList() {
@@ -158,7 +157,7 @@ public class Hantei3 {
 		List<Question> questions = getQuestionList();
 		hantei.getQuestions().addAll(questions);
 		
-		//hantei.shuffle();
+		hantei.shuffle();
 		return hantei;
 	}
 	
