@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
 body {
-	background-image:url("../ocean.jpg");
+	background-image:url("../halloween-dark.png");
 	background-attachment: fixed;
 	background-size:  100%; 
 	text-align: center;
 }
 
-.wakuwaku{
-	display: table;
-margin: 0 auto;
-margin-top:15px;
-}
 
+
+.questions {
+	border: solid;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.5);
+	margin: 0 auto;
+	width: 600px;
+}
 
 h1 {
 	color: #0ffb56;
@@ -22,6 +25,10 @@ h1 {
 	 margin-top:15px;
 	 margin-bottom:0px;
 }
+
+
+
+
 
 h3{
 	font-size:30px;
@@ -36,24 +43,44 @@ h3{
               -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 
+h4 {
+	font-size: 25px;
+	font-family:"cursive";
+	color:#000080;
+	text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
 
-
-.buttons {
-    margin: 2em 0;
-    padding: 2em;
-    margin-bottom:5px;
-    margin-top:0px;
+h5 {
+	font-size: 20px;
+	font-family:"cursive";
+	color:#000080;
+	text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 
 
 
+.main {
+	margin: 30px;
+	background-color: #00ff80;
+	padding: 15px;
+	font-size: 20px;
+	border-radius: 10px;
+}
 
+.check {
+	text-align: left;
+}
 
-
-
-
-
-
+#error {
+	color: red;
+	font-weight: bold;
+}
 
 #faa{
 	margin-top: 15px;
@@ -74,12 +101,11 @@ h3{
   height:40px;
   width:200px;
 }
+
 #botan:active {
   /*押したとき*/
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
-
-
 
 
 .neko{
@@ -90,6 +116,7 @@ h3{
   -webkit-animation:jump 3s infinite;
   -moz-animation:jump 3s infinite;
 }
+
 @keyframes jump{
   0%{transform:translate(0,0px);}
   3%{transform:translate(0,-20px);}
@@ -98,6 +125,7 @@ h3{
   7%{transform:translate(0,0px);}
   100%{transform:translate(0,0px);}
 }
+
 @-webkit-keyframes jump{
   0%{-webkit-transform:translate(0,0px);}
   3%{-webkit-transform:translate(0,-20px);}
@@ -106,6 +134,7 @@ h3{
   7%{-webkit-transform:translate(0,0px);}
   100%{-webkit-transform:translate(0,0px);}
 }
+
 @-moz-keyframes jump{
   0%{-moz-transform:translate(0,0px);}
   3%{-moz-transform:translate(0,-20px);}
@@ -122,6 +151,7 @@ h3{
   -webkit-animation:jump 4s infinite;
   -moz-animation:jump 4s infinite;
 }
+
 @keyframes jump{
   0%{transform:translate(0,0px);}
   3%{transform:translate(0,-20px);}
@@ -130,6 +160,7 @@ h3{
   7%{transform:translate(0,0px);}
   100%{transform:translate(0,0px);}
 }
+
 @-webkit-keyframes jump{
   0%{-webkit-transform:translate(0,0px);}
   3%{-webkit-transform:translate(0,-20px);}
@@ -138,6 +169,7 @@ h3{
   7%{-webkit-transform:translate(0,0px);}
   100%{-webkit-transform:translate(0,0px);}
 }
+
 @-moz-keyframes jump{
   0%{-moz-transform:translate(0,0px);}
   3%{-moz-transform:translate(0,-20px);}
@@ -145,128 +177,4 @@ h3{
   6%{-moz-transform:translate(0,-5px);}
   7%{-moz-transform:translate(0,0px);}
   100%{-moz-transform:translate(0,0px);}
-}
-
-
-p{
-	font-size:30px;
-	margin:0px;
-	padding:0px;
-}
-
-
-.answerbox{
-	margin:30px;
-	background-color:skyblue;
-	padding:15px;
-	font-size:20px;
-	border: dashed 3px #f8fbd9;
-	box-shadow:0px 0px 0px 10px skyblue;
-	border-radius: 10px;
-}
-
-
-#result {
-	font-size: 40px;
-	font-weight: bold;
-	color: red;
-}
-
-
-
-.iruka{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	left: 900px;
-	top: 700px;
-	margin-right:100px;
-  	
-}
-
-
-.iruka1{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	right: 900px;
-	top: 700px;
-	transform: scale(-1, 1);
-	
-}
-
-.kurage{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	left: 900px;
-	top: 950px;
-	
-}
-
-.kurage1{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	right: 900px;
-	top: 950px;
-	transform: scale(-1, 1);
-	
-}
-
-.maguro{
-	width: 190px;
-	height: 190px;
-	position: absolute;
-	left: 900px;
-	top: 1200px;
-	
-}
-
-.maguro1{
-	width: 190px;
-	height: 190px;
-	position: absolute;
-	right: 900px;
-	top: 1200px;
-	transform: scale(-1, 1);
-	
-}
-
-.hitode{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	left: 900px;
-	top: 1480px;
-	
-}
-
-.hitode1{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	right: 900px;
-	top: 1480px;
-	transform: scale(-1, 1);
-	
-}
-
-.tatsunootoshigo{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	left: 900px;
-	top: 1750px;
-	
-}
-
-.tatsunootoshigo1{
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	right: 900px;
-	top: 1750px;
-	transform: scale(-1, 1);
-	
 }

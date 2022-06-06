@@ -34,56 +34,56 @@ public class Hantei5 {
 				new Result(
 						"５問中０点",
 						"解説<br>"
-						+ "第１問　高校生名探偵の工藤新一<br>"
+						+ "第１問　ワシントン・ウィザーズです<br>"
 						+ "第２問　帝丹高校が正解<br>"
 						+ "第３問　黄色いビートルが愛車<br>"
 						+ "第４問　松中信彦さんがダイエーホークス時代の２００４年に三冠王を獲得されたのが最後。<br>"
-						+ "第５問　APTX4869。新一のほかも宮野志保とメアリーも飲まされた<br>"
+						+ "第５問　８人です<br>"
 				),
 				new Result(
 						"５問中１点",
 						"解説<br>"
-						+ "第１問　高校生名探偵の工藤新一<br>"
+						+ "第１問　ワシントン・ウィザーズです<br>"
 						+ "第２問　帝丹高校が正解<br>"
 						+ "第３問　黄色いビートルが愛車<br>"
 						+ "第４問　松中信彦さんがダイエーホークス時代の２００４年に三冠王を獲得されたのが最後。<br>"
-						+ "第５問　APTX4869。新一のほかも宮野志保とメアリーも飲まされた<br>"
+						+ "第５問　８人です<br>"
 				),
 				new Result(
 						"５問中２点",
 						"解説<br>"
-						+ "第１問　高校生名探偵の工藤新一<br>"
+						+ "第１問　ワシントン・ウィザーズです<br>"
 						+ "第２問　帝丹高校が正解<br>"
 						+ "第３問　黄色いビートルが愛車<br>"
 						+ "第４問　松中信彦さんがダイエーホークス時代の２００４年に三冠王を獲得されたのが最後。<br>"
-						+ "第５問　APTX4869。新一のほかも宮野志保とメアリーも飲まされた<br>"
+						+ "第５問　８人です<br>"
 				),
 				new Result(
 						"５問中３点",
 						"解説<br>"
-						+ "第１問　高校生名探偵の工藤新一<br>"
+						+ "第１問　ワシントン・ウィザーズです<br>"
 						+ "第２問　帝丹高校が正解<br>"
 						+ "第３問　黄色いビートルが愛車<br>"
 						+ "第４問　松中信彦さんがダイエーホークス時代の２００４年に三冠王を獲得されたのが最後。<br>"
-						+ "第５問　APTX4869。新一のほかも宮野志保とメアリーも飲まされた<br>"
+						+ "第５問　８人です<br>"
 				),
 				new Result(
 						"５問中４点",
 						"解説<br>"
-						+ "第１問　高校生名探偵の工藤新一<br>"
+						+ "第１問　ワシントン・ウィザーズです<br>"
 						+ "第２問　帝丹高校が正解<br>"
 						+ "第３問　黄色いビートルが愛車<br>"
 						+ "第４問　松中信彦さんがダイエーホークス時代の２００４年に三冠王を獲得されたのが最後。<br>"
-						+ "第５問　APTX4869。新一のほかも宮野志保とメアリーも飲まされた<br>"
+						+ "第５問　８人です<br>"
 				),
 				new Result(
 						"５問中５点",
 						"解説<br>"
-						+ "第１問　高校生名探偵の工藤新一<br>"
+						+ "第１問　ワシントン・ウィザーズです<br>"
 						+ "第２問　帝丹高校が正解<br>"
 						+ "第３問　黄色いビートルが愛車<br>"
 						+ "第４問　松中信彦さんがダイエーホークス時代の２００４年に三冠王を獲得されたのが最後。<br>"
-						+ "第５問　APTX4869。新一のほかも宮野志保とメアリーも飲まされた<br>"
+						+ "第５問　８人です<br>"
 				)			
 		};
 		
@@ -97,11 +97,11 @@ public class Hantei5 {
 	private static List<Question> getQuestionList() {
 		List<Question> list = new ArrayList<Question>();
 		
-		Question question1 = new Question("q1", "江戸川コナンの正体は？");
-		question1.addItem(0, "工藤新一");
-		question1.addItem(1, "松田優作");
-		question1.addItem(2, "毛利小五郎");
-		question1.addItem(3, "明智光秀");
+		Question question1 = new Question("q1", "NBAにいる八村塁の所属しているチーム名は？");
+		question1.addItem(0, "ワシントン・ウィザーズ");
+		question1.addItem(1, "ニューヨーク・ニックス");
+		question1.addItem(2, "ロサンゼルス・レイカーズ");
+		question1.addItem(3, "ボストンセル・ティックス");
 		list.add(question1);
 		
 		Question question2 = new Question("q2", "毛利蘭が通う高校は？");
@@ -126,11 +126,11 @@ public class Hantei5 {
 		question4.addItem(3, "王貞治");
 		list.add(question4);
 		
-		Question question5 = new Question("q5", "新一が飲まされた毒薬の名前は？");
-		question5.addItem(0, "APTX4869");
-		question5.addItem(1, "パブロン");
-		question5.addItem(2, "イソジン");
-		question5.addItem(3, "葛根湯");
+		Question question5 = new Question("q5", "shinbiのjavaプログラミング科3期のメンバーは何人？");
+		question5.addItem(0, "８人");
+		question5.addItem(1, "６人");
+		question5.addItem(2, "１１人");
+		question5.addItem(3, "９人");
 		list.add(question5);
 		
 		return list;
