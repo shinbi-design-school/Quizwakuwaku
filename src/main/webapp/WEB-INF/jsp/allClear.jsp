@@ -13,7 +13,7 @@
 		<meta charset="UTF-8">
 		<title>全ステージクリア！！</title>
 		<link rel="stylesheet" type="text/css"
-			  href="${pageContext.request.contextPath}/css/style.css">
+			  href="${pageContext.request.contextPath}/css/allClear.css">
 	</head>
 	
 	<body>
