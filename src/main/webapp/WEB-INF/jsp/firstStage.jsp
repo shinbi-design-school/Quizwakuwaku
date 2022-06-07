@@ -76,6 +76,7 @@ String name = (String) request.getAttribute("name");
 			<div>
 				<h3><%=question.getQuestion()%></h3>
 			</div>
+			
 			<div class="answerbox">
 				<%
 				for (Item item : question.getItems()) {
