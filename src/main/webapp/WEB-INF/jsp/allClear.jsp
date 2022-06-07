@@ -13,13 +13,10 @@
 		<meta charset="UTF-8">
 		<title>全ステージクリア！！</title>
 		<link rel="stylesheet" type="text/css"
-			  href="${pageContext.request.contextPath}/css/style.css">
+			  href="${pageContext.request.contextPath}/css/allClear.css">
 	</head>
 	
 	<body>
-		<div>
-			<h3><%= name %>さん</h3>
-		</div>
 		<h1>全ステージクリア！！！</h1>
 		<p><%= name %> さんの結果は</p>
 		<p><span id="result"><%= result.getName() %></span> で、見事全ステージクリアとなりました！！<br>
