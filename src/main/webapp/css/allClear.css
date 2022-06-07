@@ -54,8 +54,8 @@ body {
 	
 }
 
-#botan{
-	position: relative;
+#botan1, #botan2, #botan3, #botan4 {
+  position: relative;
   display: inline-block;
   padding: 0.25em 0.5em;
   text-decoration: none;
@@ -68,11 +68,11 @@ body {
   height:40px;
   width:200px;
 }
-#botan:active {
+
+#botan1, #botan2, #botan3, #botan4:active {
   /*押したとき*/
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
-
 
 #buttons {
 	background-image: url("../kusa.png");
@@ -84,7 +84,6 @@ body {
     margin-bottom:5px;
     margin-top:0px;
     width:500px;
-    
     display: inline-block;
 }
 
