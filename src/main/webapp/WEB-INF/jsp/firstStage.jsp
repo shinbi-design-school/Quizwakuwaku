@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%@ page import="cc.shinbi.quizwakuwaku.model.Hantei"%>
 <%@ page import="cc.shinbi.quizwakuwaku.model.Question"%>
@@ -70,8 +69,13 @@ String name = (String) request.getAttribute("name");
 				for (Item item : question.getItems()) {
 				%>
 				<div>
-					<input class="point" id="select<%=times%>" type="radio"
-						name="<%=question.getKey()%>" value="<%=item.getId()%>" required>
+					<input
+					 class="point"
+					  id="select<%=times%>"
+					  type="radio"
+					  name="<%=question.getKey()%>"
+					  value="<%=item.getId()%>"
+					  required>
 					<label for="select<%=times%>" class="point"><%=item.getText()%></label>
 				</div>
 				<%
