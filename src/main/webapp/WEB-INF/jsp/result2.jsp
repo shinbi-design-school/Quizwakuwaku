@@ -13,7 +13,7 @@
 		<meta charset="UTF-8">
 		<title>わくわくクイズ～アニメ編～</title>
 		<link rel="stylesheet" type="text/css"
-			  href="${pageContext.request.contextPath}/css/style.css">
+			  href="${pageContext.request.contextPath}/css/secondstage.css">
 	</head>
 	
 	<body>
@@ -21,9 +21,9 @@
 			<h3><%= name %>さん</h3>
 		</div>
 		<h1>ステージクリア！！！</h1>
-		<p>おめでとうございます！</p>
-		<p><%= name %> さんの結果は</p>
-		<p><span id="result"><%= result.getName() %></span> で、見事にステージクリアです。<br>
+		<p id="p1">おめでとうございます！</p>
+		<p id="p2"><%= name %> さんの結果は</p>
+		<p id="p1"><span id="result"><%= result.getName() %></span> で、見事にステージクリアです。<br>
 		サードステージもがんばってください♪</p>
 		<h4><%= result.getDescription() %></h4>
 		<form method="post" action="${pageContext.request.contextPath}/thirdStage">
