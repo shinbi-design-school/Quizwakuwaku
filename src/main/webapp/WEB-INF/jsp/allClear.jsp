@@ -17,9 +17,6 @@
 	</head>
 	
 	<body>
-		<div>
-			<h3><%= name %>さん</h3>
-		</div>
 		<h1>全ステージクリア！！！</h1>
 		<p><%= name %> さんの結果は</p>
 		<p><span id="result"><%= result.getName() %></span> で、見事全ステージクリアとなりました！！<br>
