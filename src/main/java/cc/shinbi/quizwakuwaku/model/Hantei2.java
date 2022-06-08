@@ -2,7 +2,6 @@ package cc.shinbi.quizwakuwaku.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Hantei2 {
@@ -27,7 +26,7 @@ public class Hantei2 {
 		for(Question question : this.questions) {
 			question.shuffle();
 		}
-		Collections.shuffle(this.questions);
+		//Collections.shuffle(this.questions);
 	}
 	
 	private static List<Result> getResultList() {
@@ -127,8 +126,8 @@ public class Hantei2 {
 		Question question3 = new Question("q3", "「体は子供、頭脳は大人」でお馴染みの人気漫画の名前は？");
 		question3.addItem(0, "名探偵コナン");
 		question3.addItem(1, "ドラゴンボール");
-		question3.addItem(2, "バクマン");
-		question3.addItem(3, "家庭教師ヒットマンREBORN!!");
+		question3.addItem(2, "古見さんは、コミュ症です。");
+		question3.addItem(3, "小林さんちのメイドラゴン");
 		list.add(question3);
 		
 		Question question4 = new Question("q4", "マッハ20で移動して月の7割を破壊したタコのような姿をした謎の生物が出てくる漫画はどれ？");
@@ -157,7 +156,7 @@ public class Hantei2 {
 		List<Question> questions = getQuestionList();
 		hantei.getQuestions().addAll(questions);
 		
-		//hantei.shuffle();
+	    hantei.shuffle();
 		return hantei;
 	}
 	

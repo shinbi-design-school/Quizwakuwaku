@@ -13,7 +13,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>わくわくクイズ～アニメ編～</title>
+<title>わくわくクイズ～アニメ・漫画編～</title>
 <link rel="stylesheet" type="text/css"
 href="${pageContext.request.contextPath}/css/secondstage.css">
 </head>
@@ -28,8 +28,8 @@ href="${pageContext.request.contextPath}/css/secondstage.css">
 	<h3><%= name %>さん</h3>
 </div>
 <div class=sumi>
-<p>わくわくクイズへようこそ！このステージではアニメに関するクイズが出題されます。</p>
-<p>５問中３問間違えたらゲームオーバー！次のステージに進めません。</p>
+	<p>2ndステージへようこそ！このステージではアニメに関するクイズが出題されます。</p>
+	<p>５問中３問間違えたらゲームオーバー！次のステージに進めません。</p>
 </div>
 
 <img class="neko" src="cat_nekoko.png" alt="neko" title="neko1">
@@ -37,38 +37,42 @@ href="${pageContext.request.contextPath}/css/secondstage.css">
 
 <form method="post" action="${pageContext.request.contextPath}/result2">
 <%
+ int times = 0;
  for(Question question : hantei.getQuestions()){
 %>
- <div class=box24>
+<div class=box24>
  <h3><%= question.getQuestion() %></h3>
- </div>
+</div>
 
- <div class=box25>
+<div class=box25>
 <%
  for(Item item : question.getItems()){
 %>
 <div>
-<input type="radio"
- name="<%= question.getKey() %>"
- value="<%= item.getId() %>"
-
- >
- <%= item.getText() %>
+  <input
+   class="point" 
+   id="select<%= times %>" 
+   type="radio"						
+   name="<%= question.getKey() %>"	
+   value="<%= item.getId() %>"required>
+<label for="select<%= times %>" class="point"><%= item.getText() %></label>
+</div>
+ <%
+ times++;
+   }
+ %>
  </div>
  <%
  }
  %>
- </div>
- 
- <%
- }
- %>
 
- <div id="buttons">
- <input class=back type="submit" value="結果を見る">
- </div>
- <input type="hidden" name="name" value="<%= name %>">
- </form>
- </main>
- </body>
- </html>
+<br>
+	<br>
+<div id="buttons">
+	<input id="push" type="submit" value="結果を見る">
+</div>
+	<input type="hidden" name="name" value="<%= name %>">
+</form>
+</main>
+</body>
+</html>
