@@ -15,7 +15,7 @@
 <meta charset="UTF-8">
 <title>わくわくクイズ～アニメ編～</title>
 <link rel="stylesheet" type="text/css"
-href="${pageContext.request.contextPath}/css/Style.css">
+href="${pageContext.request.contextPath}/css/secondstage.css">
 </head>
 <body>
 <header>
@@ -32,14 +32,18 @@ href="${pageContext.request.contextPath}/css/Style.css">
 <p>５問中３問間違えたらゲームオーバー！次のステージに進めません。</p>
 </div>
 
+<img class="neko" src="cat_nekoko.png" alt="neko" title="neko1">
+<img class="neko1" src="cat_tomomo.png" alt="neko2" title="neko2">
+
 <form method="post" action="${pageContext.request.contextPath}/result2">
 <%
  for(Question question : hantei.getQuestions()){
 %>
- <div class=box>
+ <div class=box24>
  <h3><%= question.getQuestion() %></h3>
  </div>
- <div>
+
+ <div class=box25>
 <%
  for(Item item : question.getItems()){
 %>
@@ -59,7 +63,7 @@ href="${pageContext.request.contextPath}/css/Style.css">
  <%
  }
  %>
- 
+
  <div id="buttons">
  <input class=back type="submit" value="結果を見る">
  </div>
