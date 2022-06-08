@@ -5,15 +5,44 @@ body {
 	 background-size:  160%; 
 }
 
-
+#houbi h1{
+	color: #bfd5f9;
+	text-shadow: 4px 4px 4px #ffffff;
+	font-size:70px;
+	font-family:"cursive";
+	 margin-top:50px;
+	 margin-bottom:0px;
+	margin-left:0px;
+	margin-right:40px;
+}
 h1 {
-	color: #0ffb56;
-	text-shadow: 3px 3px 3px #ffffff;
-	font-size:60px;
+	color: #bfd5f9;
+	text-shadow: 4px 4px 4px #ffffff;
+	font-size:300px;
 	font-family:"cursive";
 	 margin-top:15px;
 	 margin-bottom:0px;
+	margin-left:0px;
+	margin-right:40px;
+	 
+	 
 }
+.fade{
+        animation: fadeIn 5s ease ;
+    }
+    @keyframes fadeIn { /*animation-nameで設定した値を書く*/
+        0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+        100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+    }
+    
+    h2{
+    font-size:40px;
+    text-align: left;
+    color: #85aef3;
+	text-shadow: 4px 4px 4px #ffffff;
+	margin-bottom:0px;
+    }
+    
 
 h3{
 	font-size:30px;
@@ -26,6 +55,16 @@ h3{
               -1px 1px 0 #FFF, 1px -1px 0 #FFF,
               0px 1px 0 #FFF,  0-1px 0 #FFF,
               -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+h4{
+	text-align: left; 
+	font-size:17px;
+	font-family:"serif";
+	padding-left: 100px;
+	padding-right:100px;
+	padding-bottom:30px;
+	padding-top:30px;
 }
 
 body {
@@ -57,16 +96,20 @@ body {
 #botan1, #botan2, #botan3, #botan4 {
   position: relative;
   display: inline-block;
-  padding: 0.25em 0.5em;
+  padding: 0.25em 2em;
   text-decoration: none;
-  color: #FFF;
-  background: #fd9535;/*色*/
-  border-radius: 4px;/*角の丸み*/
+  color: #979797;
+  background: #ffffff;/*色*/
+  border-radius: 50%;/*角の丸み*/
   box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
   font-weight: bold;
-  border: solid 2px #d27d00;/*線色*/
-  height:40px;
-  width:200px;
+  border: solid 2px #caf0fb;/*線色*/
+  height:140px;
+  width:140px;
+  margin-right:35px;
+  margin-left:35px;
+  margin-top:30px;
+  margin-bottom:30px;
 }
 
 #botan1, #botan2, #botan3, #botan4:active {
@@ -74,11 +117,13 @@ body {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 
-#buttons {
-	background-image: url("../kusa.png");
-    border: 2px solid #fff;
-    box-shadow: 0 0 0 2px #cafbce;
-    color: #0a8915;
+#push {
+	background-image: url("../kumo.jpg");
+	background-color:#fff;
+    border: 3px solid #fff;
+    border-radius: 10px;/*角の丸み*/
+    box-shadow: 0 0 0 3px #caf0fb;
+    color: #4e4e4e;
     margin: 2em 0;
     padding: 2em;
     margin-bottom:5px;
@@ -88,15 +133,108 @@ body {
 }
 
 
-p{
-	font-size:30px;
-	margin:0px;
-	padding:0px;
-}
 
 
 #result {
-	font-size: 40px;
-	font-weight: bold;
-	color: red;
+	font-size: 55px;
+	font-weight: boid;
+	color: #85aef3;
+	text-shadow: 4px 4px 4px #ffffff;
+	
+}
+
+
+.box{
+	margin:50px;
+	margin-top:20px;
+	padding:15px;
+	font-size:20px;
+    
+}
+
+.box p{
+	text-align:left;
+	padding-left:10px;
+}
+
+.box16{
+	 padding: 0.5em 1em;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:0px;
+    color: #022b40;
+    background-color:rgba(255,255,255,0.5);
+   border-radius: 10px;
+    
+}
+
+.neko{
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	left: 700px;
+	top: 1550px;
+	transform: scale(-1, 1);
+}
+
+.neko1{
+	width:  180px;
+	height: 180px;
+	position: absolute;
+	right: 950px;
+	top: 1300px;
+	transform: scale(-1, 1);
+	
+}
+
+@media screen and (min-width:1300px) {
+
+h4{
+	text-align: left; 
+	font-size:17px;
+	font-family:"serif";
+	padding-left: 100px;
+	padding-right:100px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.box{
+	margin:50px;
+	margin-top:20px;
+	margin-bottom:10px;
+	padding:15px;
+	font-size:20px;
+    
+}
+
+.box16{
+	 
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:0px;
+    color: #022b40;
+    background-color:rgba(255,255,255,0.5);
+   border-radius: 10px;
+    
+}
+
+.neko{
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	left: 890px;
+	top: 1040px;
+	transform: scale(-1, 1);
+}
+
+.neko1{
+	width:  180px;
+	height: 180px;
+	position: absolute;
+	right: 1300px;
+	top: 800px;
+	transform: scale(-1, 1);
+	
+}
+	
 }
