@@ -11,11 +11,13 @@
 		<meta charset="UTF-8">
 		<title>ご褒美動画</title>
 		<link rel="stylesheet" type="text/css"
-			  href="${pageContext.request.contextPath}/css/style2.css">
+			  href="${pageContext.request.contextPath}/css/allClear.css">
 	</head>
 	
 	<body>
+	<div id="houbi">
 		<h1>ご褒美動画</h1>
+		</div>
 		<p>
 			全ステージクリアした方のみが観ることができる<br>
 			ご褒美動画です。ごゆっくりお楽しみください。
@@ -63,12 +65,12 @@
 		   <br>
 		    <br>
 		    
-		<button id="buttons" type="button" onclick="history.back()">さっきの画面に戻る</button>
+		<button id="push" type="button" onclick="history.back()">さっきの画面に戻る</button>
 				<br>
 			  <br>
 		<form method="get" action="${pageContext.request.contextPath}/top">		
 		<div>
-			<input id="buttons" type="submit" value="トップ画面に戻る">		
+			<input id="push" type="submit" value="トップ画面に戻る">		
 		</div>
 		</form>
 	</body>
