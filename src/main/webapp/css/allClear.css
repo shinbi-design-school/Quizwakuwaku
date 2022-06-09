@@ -173,7 +173,7 @@ body {
 	height: 170px;
 	position: absolute;
 	left: 700px;
-	top: 1550px;
+	top: 1650px;
 	transform: scale(-1, 1);
 }
 
@@ -182,7 +182,7 @@ body {
 	height: 180px;
 	position: absolute;
 	right: 950px;
-	top: 1300px;
+	top: 1360px;
 	transform: scale(-1, 1);
 	
 }
@@ -223,7 +223,7 @@ h4{
 	height: 170px;
 	position: absolute;
 	left: 890px;
-	top: 1040px;
+	top: 1140px;
 	transform: scale(-1, 1);
 }
 
@@ -232,7 +232,7 @@ h4{
 	height: 180px;
 	position: absolute;
 	right: 1300px;
-	top: 800px;
+	top: 850px;
 	transform: scale(-1, 1);
 	
 }
