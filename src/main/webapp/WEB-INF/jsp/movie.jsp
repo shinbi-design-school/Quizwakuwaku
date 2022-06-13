@@ -38,8 +38,15 @@
         <%-- <iframe>はYouTube共有から埋め込みで取ってくる --%>
 		<%-- 動画リンクの最後に?autoplay=1を付けることでページ切り替え後自動再生 --%>
 		<%-- ?autoplay=1の後に&mute=1を付けることでミュートで再生する--%>
+		<%-- 
 		<iframe                                                                                                              
 			width="560" height="315"height="315" src="https://www.youtube.com/embed/HWlJpv1sFJM?autoplay=1&mute=1" title="YouTube video player" 
+		    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
+		--%>
+		<iframe 
+		    width="560" height="315" src="https://www.youtube.com/embed/?playlist=gJP6uEftlxQ,HWlJpv1sFJM,LxsQZNTFfxc,VPB_J6Egi28,VPB_J6Egi28?modestbranding=1&showinfo=0&autoplay=1&mute=1&loop=1&color=white" 
+		    title="YouTube video player" 
 		    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 		</iframe>
 <%
