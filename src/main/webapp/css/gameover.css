@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+body {
+	background-image:url("../ame.jpg");
+	background-size: aute;
+	text-align: center;
+}
+.wakuwaku{
+	display: table;
+margin: 0 auto;
+margin-top:15px;
+}
+h1 {
+	color: #02304a;
+	text-shadow: 3px 3px 3px #ffffff;
+	font-size:300px;
+	font-family:"cursive";
+	 margin-top:15px;
+	 margin-bottom:0px;
+	 border-top:double 8px  #c4e8fd;
+	 border-bottom: double 8px  #c4e8fd;
+	margin-left:0px;
+	margin-right:40px;
+	 
+	 
+	 
+}
+.fade{
+        animation: fadeIn 5s ease ;
+    }
+    @keyframes fadeIn { /*animation-nameで設定した値を書く*/
+        0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+        100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+    }
+ 
+
+h3{
+	font-size:50px;
+	margin-top:50px;
+	margin-bottom:10px;
+	margin-left:40px;
+	font-family:"cursive";
+	 text-align: left;
+	 color: #191970;
+	text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+h4{
+	text-align: left;
+}
+.box{
+	margin:50px;
+	background-color: #f9f9db;
+	padding:15px;
+	font-size:20px;
+	border: dashed 3px #c4e8fd;;
+	box-shadow:0px 0px 0px 10px #f9f9db;
+	border-radius: 10px;
+}
+
+.box p{
+	text-align:left;
+	padding-left:10px;
+}
+h4{
+	font-size:25px;
+}
+body {
+	text-align: center;
+}
+
+.main {
+	margin: 30px;
+	background-color: #00ff80;
+	padding: 15px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+.check {
+	text-align: left;
+}
+
+#error {
+	color: red;
+	font-weight: bold;
+}
+
+#faa{
+	margin-top: 15px;
+	
+}
+#back{
+	margin:10px;
+	background-color:#f9f9db;
+	padding:15px;
+	font-size:20px;
+	border: dashed 3px #c4e8fd;
+	box-shadow:0px 0px 0px 10px #f9f9db;
+	border-radius: 10px;
+	
+}
+
+
+
+#buttons {
+	background-image: url("../kusa.png");
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #cafbce;
+    color: #0a8915;
+    margin: 2em 0;
+    padding: 2em;
+    margin-bottom:5px;
+    margin-top:0px;
+    width:500px;
+}
+
+.neko1{
+	position: absolute;
+	width:  400px;
+	height: 450px;
+	left: 770px;
+	top: 620px;	
+	margin-bottom:0px;
+	padding-bottom:0px;
+	margin-right:50px;
+  animation:jump 3s infinite;
+  -webkit-animation:jump 3s infinite;
+  -moz-animation:jump 3s infinite;
+}
+@keyframes jump{
+  0%{transform:translate(0,0px);}
+  3%{transform:translate(0,-20px);}
+  5%{transform:translate(0,0px);}
+  6%{transform:translate(0,-5px);}
+  7%{transform:translate(0,0px);}
+  100%{transform:translate(0,0px);}
+}
+@-webkit-keyframes jump{
+  0%{-webkit-transform:translate(0,0px);}
+  3%{-webkit-transform:translate(0,-20px);}
+  5%{-webkit-transform:translate(0,0px);}
+  6%{-webkit-transform:translate(0,-5px);}
+  7%{-webkit-transform:translate(0,0px);}
+  100%{-webkit-transform:translate(0,0px);}
+}
+@-moz-keyframes jump{
+  0%{-moz-transform:translate(0,0px);}
+  3%{-moz-transform:translate(0,-20px);}
+  5%{-moz-transform:translate(0,0px);}
+  6%{-moz-transform:translate(0,-5px);}
+  7%{-moz-transform:translate(0,0px);}
+  100%{-moz-transform:translate(0,0px);}
+}
+
+.neko{
+	position: absolute;
+	right: 850px;
+	top: 1520px;	
+	width:  300px;
+	height: 350px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	animation:jump 4s infinite;
+  -webkit-animation:jump 4s infinite;
+  -moz-animation:jump 4s infinite;
+}
+@keyframes jump{
+  0%{transform:translate(0,0px);}
+  3%{transform:translate(0,-20px);}
+  5%{transform:translate(0,0px);}
+  6%{transform:translate(0,-5px);}
+  7%{transform:translate(0,0px);}
+  100%{transform:translate(0,0px);}
+}
+@-webkit-keyframes jump{
+  0%{-webkit-transform:translate(0,0px);}
+  3%{-webkit-transform:translate(0,-20px);}
+  5%{-webkit-transform:translate(0,0px);}
+  6%{-webkit-transform:translate(0,-5px);}
+  7%{-webkit-transform:translate(0,0px);}
+  100%{-webkit-transform:translate(0,0px);}
+}
+@-moz-keyframes jump{
+  0%{-moz-transform:translate(0,0px);}
+  3%{-moz-transform:translate(0,-20px);}
+  5%{-moz-transform:translate(0,0px);}
+  6%{-moz-transform:translate(0,-5px);}
+  7%{-moz-transform:translate(0,0px);}
+  100%{-moz-transform:translate(0,0px);}
+}
+
+.box16{
+	 padding: 0.5em 1em;
+    margin: 2em 0;
+    
+    margin-top:0px;
+    color: #022b40;
+    background-color:rgba(255,255,204,0.5);
+   border-radius: 10px;
+    
+}
+p{
+	font-size:30px;
+	margin:0px;
+	padding:0px;
+}
+
+
+#result {
+	font-size: 55px;
+	font-weight: boid;
+	color: #02304a;
+	
+	
+}
+@media screen and (min-width:1300px) {
+	.neko{
+	position: absolute;
+	width:  400px;
+	height: 450px;
+	left: 1000px;
+	top: 640px;	
+	margin-bottom:0px;
+	padding-bottom:0px;
+	margin-right:50px;
+  animation:jump 3s infinite;
+  -webkit-animation:jump 3s infinite;
+  -moz-animation:jump 3s infinite;
+}
+@keyframes jump{
+  0%{transform:translate(0,0px);}
+  3%{transform:translate(0,-20px);}
+  5%{transform:translate(0,0px);}
+  6%{transform:translate(0,-5px);}
+  7%{transform:translate(0,0px);}
+  100%{transform:translate(0,0px);}
+}
+@-webkit-keyframes jump{
+  0%{-webkit-transform:translate(0,0px);}
+  3%{-webkit-transform:translate(0,-20px);}
+  5%{-webkit-transform:translate(0,0px);}
+  6%{-webkit-transform:translate(0,-5px);}
+  7%{-webkit-transform:translate(0,0px);}
+  100%{-webkit-transform:translate(0,0px);}
+}
+@-moz-keyframes jump{
+  0%{-moz-transform:translate(0,0px);}
+  3%{-moz-transform:translate(0,-20px);}
+  5%{-moz-transform:translate(0,0px);}
+  6%{-moz-transform:translate(0,-5px);}
+  7%{-moz-transform:translate(0,0px);}
+  100%{-moz-transform:translate(0,0px);}
+}
+
+.neko1{
+	position: absolute;
+	left: 60px;
+	top: 1420px;	
+	width:  200px;
+	height: 230px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	animation:jump 4s infinite;
+  -webkit-animation:jump 4s infinite;
+  -moz-animation:jump 4s infinite;
+}
+@keyframes jump{
+  0%{transform:translate(0,0px);}
+  3%{transform:translate(0,-20px);}
+  5%{transform:translate(0,0px);}
+  6%{transform:translate(0,-5px);}
+  7%{transform:translate(0,0px);}
+  100%{transform:translate(0,0px);}
+}
+@-webkit-keyframes jump{
+  0%{-webkit-transform:translate(0,0px);}
+  3%{-webkit-transform:translate(0,-20px);}
+  5%{-webkit-transform:translate(0,0px);}
+  6%{-webkit-transform:translate(0,-5px);}
+  7%{-webkit-transform:translate(0,0px);}
+  100%{-webkit-transform:translate(0,0px);}
+}
+@-moz-keyframes jump{
+  0%{-moz-transform:translate(0,0px);}
+  3%{-moz-transform:translate(0,-20px);}
+  5%{-moz-transform:translate(0,0px);}
+  6%{-moz-transform:translate(0,-5px);}
+  7%{-moz-transform:translate(0,0px);}
+  100%{-moz-transform:translate(0,0px);}
+}
+	
+}
